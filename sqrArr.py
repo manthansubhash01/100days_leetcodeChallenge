@@ -20,7 +20,7 @@ Constraints:
     nums is sorted in non-decreasing order.'''
 
 class Solution:
-    def sortedSquares(self, nums: List[int]) -> List[int]:
+    def sortedSquares(self, nums):
         p=[i*i for i in nums]
         p.sort()
         return p

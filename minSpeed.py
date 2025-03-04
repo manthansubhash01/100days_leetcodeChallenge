@@ -27,9 +27,9 @@ Output: 23
 
 Constraints:
 
-    1 <= piles.length <= 104
-    piles.length <= h <= 109
-    1 <= piles[i] <= 109'''
+    1 <= piles.length <= 10^4
+    piles.length <= h <= 10^9
+    1 <= piles[i] <= 10^9'''
 ###################################################################################
 
 class Solution:

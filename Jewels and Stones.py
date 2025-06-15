@@ -5,7 +5,6 @@ You're given strings jewels representing the types of stones that are jewels, an
 
 Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
- 
 
 Example 1:
 
@@ -17,7 +16,6 @@ Example 2:
 Input: jewels = "z", stones = "ZZ"
 Output: 0
 
- 
 
 Constraints:
 
@@ -28,13 +26,6 @@ Constraints:
 '''
 #####################################################################################
 
-class Solution {
-public:
-    int numJewelsInStones(string jewels, string stones) {
-        int ans = 0;
-        for(auto x : jewels){
-            ans += count(stones.begin(),stones.end(),x);
-        }
-        return ans;
-    }
-};
+class Solution:
+    def numJewelsInStones(self, jewels: str, stones: str) -> int:
+        return sum(stones.count(j) for j in jewels)

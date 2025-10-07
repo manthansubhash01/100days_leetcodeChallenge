@@ -68,3 +68,4 @@ public:
         return -1;
     }
 };
+GCD of Odd and Even Sums
